@@ -7,6 +7,8 @@
     <title>Trello Web Example</title>
 </head>
 <body>
-    {{ $key }}; 
+    <b> Name: {{ $response['name'] }} </b>
+    <p> Description: {{ $response['desc'] }} </p>
+    <p> {{ $response }} </p>
 </body>
 </html>
