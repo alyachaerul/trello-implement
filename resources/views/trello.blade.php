@@ -7,8 +7,10 @@
     <title>Trello Web Example</title>
 </head>
 <body>
-    <b> Name: {{ $response['name'] }} </b>
-    <p> Description: {{ $response['desc'] }} </p>
-    <p> {{ $response }} </p>
+   @foreach (json_decode($lists) as $list)
+       <span> {{ $list->name }} </span>
+       <span> {{ $list->id }} </span>
+       <br/>
+   @endforeach
 </body>
 </html>
